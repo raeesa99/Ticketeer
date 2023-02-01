@@ -23,6 +23,10 @@ export default function Nav() {
           <Link href="/selleraccount" class="nav-link">
             <li>Seller account</li>
           </Link>
+
+          <a href="/" class="nav-link">
+            <li>Home</li>
+          </a>
         
         {/* <li>
           <label for="search"></label>
