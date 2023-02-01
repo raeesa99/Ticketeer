@@ -1,4 +1,5 @@
 import React from "react";
+import  Link from 'next/link';
 
 export default function Nav() {
   return (
@@ -6,23 +7,24 @@ export default function Nav() {
       <ul>
         <li>
           <a href="/" class="nav-link">
-            UK
+            Login
           </a>
         </li>
         <li>
           <a href="/Topmovies" class="nav-link">
-            Sports
+            register
           </a>
         </li>
         <li>
           <a href="/about" class="nav-link">
-            Tech
+            account
           </a>
         </li>
         <li>
-          <a href="/Interests" class="nav-link">
-            Politics
+          <a href="/about" class="nav-link">
           </a>
+          <label for="search"></label>
+          <input type="text" id="search" name="search" placeholder="search"></input>
         </li>
       </ul>
     </div>
