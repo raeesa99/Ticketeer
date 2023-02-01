@@ -5,27 +5,33 @@ export default function Nav() {
   return (
     <div class="nav">
       <ul>
-        <li>
+        
+          <Link href="/Login" class="nav-link">
+            <li>Login</li>
+          </Link>
+        
+        
+          <Link href="/register" class="nav-link">
+            <li>register</li>
+          </Link>
+        
+        
+          <Link href="/useraccount" class="nav-link">
+            <li>Buyer account</li>
+          </Link>
+
+          <Link href="/selleraccount" class="nav-link">
+            <li>Seller account</li>
+          </Link>
+
           <a href="/" class="nav-link">
-            Login
+            <li>Home</li>
           </a>
-        </li>
-        <li>
-          <a href="/Topmovies" class="nav-link">
-            register
-          </a>
-        </li>
-        <li>
-          <a href="/about" class="nav-link">
-            account
-          </a>
-        </li>
-        <li>
-          <a href="/about" class="nav-link">
-          </a>
+        
+        {/* <li>
           <label for="search"></label>
           <input type="text" id="search" name="search" placeholder="search"></input>
-        </li>
+        </li> */}
       </ul>
     </div>
   );
