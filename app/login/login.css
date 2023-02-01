@@ -1,0 +1,44 @@
+form {
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    opacity: 80%;
+    box-shadow: 4px 4px 10px rgb(60, 68, 62);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+label {
+    padding-top: 3px;
+    font-size: 22px;
+    color: #5bba6fff;
+}
+
+input {
+    padding: 5px;
+    margin: 2%;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px rgb(148, 155, 150);
+    width: 50%;
+    font-family: 'Comfortaa', cursive;
+    color: #095531ff;
+}
+
+#signupButton {
+    font-family: 'Comfortaa', cursive;
+    color: #5bba6fff;
+    font-weight: 700;
+    padding: 2% 3% 2% 3%;
+    font-size: 25px;
+    cursor: pointer;
+    border: 1px solid #5bba6fff;    
+    box-shadow: 2px 2px 2px #095531ff;
+
+}
+
+#signupButton:hover {
+    box-shadow: 4px 4px 10px #448C54;
+}
