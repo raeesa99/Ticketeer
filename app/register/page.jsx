@@ -10,7 +10,7 @@ export default function SignUp() {
       <div>
 <form action="/register"  id="cont1" method="post">
 
-<h2 id='h1'>Register:</h2>
+<h2 id='h1'>Sign Up:</h2>
 <div id="box1">
 <label for="username"></label>
 <input type="text" id="username" name="username" placeholder="choose a username..."/>
