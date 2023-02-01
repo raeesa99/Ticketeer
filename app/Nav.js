@@ -6,7 +6,7 @@ export default function Nav() {
     <div class="nav">
       <ul>
         
-          <Link href="/Login" class="nav-link">
+          <Link href="/login" class="nav-link">
             <li>Login</li>
           </Link>
         
