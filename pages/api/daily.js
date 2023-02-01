@@ -1,5 +1,5 @@
 import nextConnect from 'next-connect';
-import middleware from '../../middleware/database.js';
+import middleware from 'app/middleware/database';
 
 const handler = nextConnect();
 
