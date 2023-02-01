@@ -1,7 +1,20 @@
 import styles from './register.css'
 import  Link from 'next/link';
+// import { useState } from 'react'
 
 // const inter = Inter({ subsets: ['latin'] })
+
+const Home = ({data}) => {
+    const updateMacros = async () => {
+      const res = await fetch('http://localhost:3000/api/daily', {
+        method: 'post',
+        body: JSON.stringify(results)
+      })
+    }}
+
+
+
+
 
 export default function SignUp() {
   return (
