@@ -26,7 +26,7 @@ export default function Login() {
   <p>if you do not have an account, please <a href="/signup">sign up</a> first</p>
       </form>
       </div>
-<p class="error">{{ error }}</p>
+{/* <p class="error">{{ error }}</p> */}
     </main>
   )
 }
