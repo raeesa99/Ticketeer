@@ -6,15 +6,13 @@ import  Link from 'next/link';
 export default function Login() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <h1 id="h1">bob</h1>
-      </div>
+      <div className={styles.description}></div>
       <div>
       <form action="/login" method="post">
         <h2>LOG IN</h2>
-      <input type="text" name="username" placeholder="enter your username..."/>
-        <label for="username">User Name:</label>
-        <br/>
+    <label for="username">User Name:</label>
+    <input type="text" name="username" placeholder="enter your username..."/> 
+<br/>
     <label for="email">Email:</label>
     <input type="text" name="email" placeholder="enter your email address"/>
 <br/>
