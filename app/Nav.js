@@ -11,13 +11,17 @@ export default function Nav() {
           </Link>
         
         
-          <Link href="/Topmovies" class="nav-link">
+          <Link href="/register" class="nav-link">
             <li>register</li>
           </Link>
         
         
-          <Link href="/about" class="nav-link">
-            <li>account</li>
+          <Link href="/useraccount" class="nav-link">
+            <li>Buyer account</li>
+          </Link>
+
+          <Link href="/selleraccount" class="nav-link">
+            <li>Seller account</li>
           </Link>
         
         {/* <li>

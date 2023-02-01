@@ -21,7 +21,7 @@ export default function Login() {
 <br/>
     <input id="signupButton" type="submit" value="Log me in!"/>
 <br/>
-  <p>if you do not have an account, please <a href="/signup">sign up</a> first</p>
+  <p>if you do not have an account, please <a href="/register">sign up</a> first</p>
       </form>
       </div>
 {/* <p class="error">{{ error }}</p> */}
