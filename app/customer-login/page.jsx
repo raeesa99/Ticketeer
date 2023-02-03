@@ -1,5 +1,5 @@
 'use client'
-// import styles from './login.css'
+import styles from './login.css'
 import  Link from 'next/link';
 import { useState, useEffect } from 'react'
 
@@ -30,10 +30,10 @@ const login = async (text) => {
 
 export default function Login() {
   return (
-    <main>
-      {/* className={styles.main} */}
-      <div>
-      {/* className={styles.description} */}
+    <main className={styles.main}>
+      
+      <div className={styles.description}>
+      
         <form action='/Login' id='cont1' method='post' onSubmit={(e) => {
         e.preventDefault();
         getUser(user);
