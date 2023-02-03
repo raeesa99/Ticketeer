@@ -2,7 +2,6 @@
 // import styles from './login.css'
 import  Link from 'next/link';
 import { useState, useEffect } from 'react'
-import { User } from 'models/customer'
 
 const getUser = async (setUser) => {
   let user = await fetch ('http://localhost:3000/api/hello')

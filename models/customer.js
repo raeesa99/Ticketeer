@@ -1,4 +1,4 @@
-import {Schema, model} from 'mongoose';
+import mongoose, {Schema, model} from 'mongoose';
 
 // const { Schema, model } = require('mongoose');
 
@@ -28,4 +28,5 @@ User.statics.findUser = async function(username, email) {
     return (document[0]);
 }
 
-export default mongoose.models.users || model('users', message);
+export default mongoose.models?.users || model('users', User);
+// export default mongoose.ticketeer || model('ticketeer');

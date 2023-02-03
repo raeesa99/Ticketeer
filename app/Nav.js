@@ -3,22 +3,22 @@ import  Link from 'next/link';
 
 export default function Nav() {
   return (
-    <div class="nav">
+    <div className="nav">
       <ul>
 
-          <a href="/" class="nav-link">
+          <a href="/" className="nav-link">
             <li>Home</li>
           </a>
         
-          <Link href="/customer-login" class="nav-link">
+          <Link href="/customer-login" className="nav-link">
             <li> Customer Login</li>
           </Link>
         
-          <Link href="/seller-login" class="nav-link">
+          <Link href="/seller-login" className="nav-link">
             <li>Event Organiser Login</li>
           </Link>
 
-          <Link href="/register" class="nav-link">
+          <Link href="/register" className="nav-link">
             <li>Sign Up</li>
           </Link>
         
