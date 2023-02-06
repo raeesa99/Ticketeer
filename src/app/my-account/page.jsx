@@ -2,7 +2,7 @@
 import styles from './account.css'
 import  Link from 'next/link';
 import Image from 'next/image'
-import florence from '../public/florence.jpg'
+// import florence from '../public/florence.jpg'
 
 // const myImage = (props) => {
 //     return 

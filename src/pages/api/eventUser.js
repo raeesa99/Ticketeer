@@ -1,6 +1,6 @@
-import connectToDB from '@/lib/dbConnection';
-import mongoose from 'mongoose';
-import { default as EventUser } from '@/models/eventlogin'
+// import connectToDB from '@/lib/dbConnection';
+// import mongoose from 'mongoose';
+import { default as EventUser } from '../../models/eventlogin'
 
 // const createEvent = (params) => {
 //     //create event in DB
