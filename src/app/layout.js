@@ -1,5 +1,5 @@
 import './globals.css'
-import Nav from "./Nav";
+import Nav from "./Navbar";
 import "./navbar.css";
 export default function RootLayout({ children }) {
   return (
