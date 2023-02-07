@@ -34,22 +34,25 @@ export default function Login() {
       
       <div className={styles.description}>
       
-        <form action='/Login' id='cont1' method='post' onSubmit={(e) => {
+        <form action='/my-account' id='cont1' method='post' onSubmit={(e) => {
         e.preventDefault();
-        getUser(user);
+        getUser();
       }}>
           <h2 id="login1">Customer Login:</h2>
           <div id='box1'>
             <label htmlFor="email"></label>
-            <input type="text" id='email' name="email" placeholder="enter your email address" onChange={(e) => setUserEmail(e.target.value)}/>
+            <input type="text" id='email' name="email" placeholder="enter your email address" />
+            {/* onChange={(e) => setUserEmail(e.target.value)} */}
 
             <br/>
-            <input type="text" id="username" name="person" placeholder="username" onChange={(e) => setUserUsername(e.target.value)}/>
+            <input type="text" id="username" name="person" placeholder="username" />
+            {/* onChange={(e) => setUserUsername(e.target.value)} */}
 
             <label htmlFor="type"></label>
             <br/>
-            <input type="text" id="password" name="type" placeholder="password" onChange={(e) => setUserPassword(e.target.value)}/>
+            <input type="text" id="password" name="type" placeholder="password"/>
             <br/>
+            {/* onChange={(e) => setUserPassword(e.target.value)} */}
             <input type="submit" value="Submit" id ="submit1"/>
             
             {/* <a  id ="reg"href="http://localhost:3000/register">register</a> */}

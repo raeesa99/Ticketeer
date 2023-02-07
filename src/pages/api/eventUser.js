@@ -15,6 +15,7 @@ if (req.method !== 'POST') {
 try {
     const eventuser = new EventUser({
         username: JSON.parse(req.body).username,
+        email: JSON.parse(req.body).email,
         password: JSON.parse(req.body).password,
     });
     eventuser.save();

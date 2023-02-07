@@ -1,25 +1,21 @@
 'use client'
-import styles from './register.css'
+import styles from './seller-register.css'
 import  Link from 'next/link';
 // import { useState } from 'react'
 import { useState, useEffect } from 'react'
 
 // const inter = Inter({ subsets: ['latin'] })
 
-const sell = async (price,username,event,location,capacity,max_capacity) => {
-  let data = await fetch('http://localhost:3000/api/createUser', {
+const sellerSignup = async (username, email, password) => {
+  let data = await fetch('http://localhost:3000/api/eventUser', {
     method: 'post',
     headers: {
       'ContentType': 'application/json'
     },
     body: JSON.stringify({
-      price,
       username,
-      event,
-      location,
-      capacity,
-      max_capacity,
-      eventID
+      email,
+      password
     })
   });
   //if data.error 
@@ -28,14 +24,11 @@ const sell = async (price,username,event,location,capacity,max_capacity) => {
 };
 
 
-export default function selling() {
+export default function SignIn() {
 
-  const [price, setPrice] = useState('');
   const [username, setUsername] = useState('');
-  const [event, setEvent] = useState('');
-  const [location, setLocation] = useState('');
-  const [max_capacity, setmax_capacity] = useState('');
-  const [eventID, seteventID] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   return (
     <main className={styles.main}>
@@ -43,37 +36,23 @@ export default function selling() {
       <div>
 <form id="cont1" method="post" onSubmit={(e) => {
         e.preventDefault();
-        register(username,event,location, max_capacity,eventID);
+        sellerSignup(username, email, password);
       }}>
 
-<h2 id='h1'>SELL:</h2>
+<h2 id='h1'>Event Organiser Signup:</h2>
 <div id="box1">
-
-<label htmlFor="price"></label>
-<input type="text" id="price" name="price" placeholder="select price" onChange={(e) => setPrice(e.target.value)} />    
-
-
-
 <label htmlFor="username"></label>
-<input type="text" id="" name="username" placeholder="choose a username..." onChange={(e) => setUsername(e.target.value)} />
+<input type="text" id="username" name="username" placeholder="enter username..." onChange={(e) => setUsername(e.target.value)} />
 
-<label htmlFor="event"></label>
-<input type="text" id="event" name="event" placeholder="select event" onChange={(e) => setEvent(e.target.value)}/>
+<label htmlFor="email"></label>
+<input type="text" id="email" name="email" placeholder="enter your email address" onChange={(e) => setEmail(e.target.value)}/>
 
-<label htmlFor="location"></label>
-<input type="text" id="location" name="location" placeholder="set location" onChange={(e) => setLocation(e.target.value)}/>
-
-<label htmlFor="max_capacity"></label>
-<input type="text" id="max_capacity" name="max_capacity" placeholder="set capacity" onChange={(e) => setmax_capacity(e.target.value)}/>
-
-{/* <label htmlFor="eventID"></label>
-<input type="text" id="eventID" name="eventID" placeholder="" onChange={(e) => setLocation(e.target.value)}/> */}
-
-
+<label htmlFor="password"></label>
+<input type="password" id="password" name="password" placeholder="enter password..." onChange={(e) => setPassword(e.target.value)}/>
 
 <input id="submit1" type="submit" value="send" />
 
-<a id="reg" href="http://localhost:3000">login</a>
+{/* <a id="reg" href="http://localhost:3000"></a> */}
 </div>
 </form>
 </div>
