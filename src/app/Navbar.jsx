@@ -9,7 +9,7 @@ export default function Nav() {
   if (customerLoggedIn) {
     navLinks =
     <>
-  <Link href="/myaccount" className="nav-link">
+  <Link href="/my-account" className="nav-link">
     <li>My Account</li>
   </Link>
 
@@ -43,11 +43,11 @@ export default function Nav() {
     <li>Event Organiser Login</li>
   </Link>
 
-  <Link href="/register" className="nav-link">
+  <Link href="/customer-register" className="nav-link">
     <li>Customer Sign Up</li>
   </Link>
 
-  <Link href="/register" className="nav-link">
+  <Link href="/seller-register" className="nav-link">
     <li>Event Organiser Sign Up</li>
   </Link>
   {navLinks}
