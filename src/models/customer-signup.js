@@ -1,14 +1,11 @@
 import mongoose, {Schema, model} from 'mongoose';
 
-// const { Schema, model } = require('mongoose');
-
 const User = new Schema({
     username: {type: String, required: true, unique: true},
     email: {type: String, required: true, unique: true},
     password: {type: String, required: true},
 });
 
-//to check if EITHER of the details already exists using $or to sign up:
 User.statics.checkIfExists = async function(username, email) {
     const result = await this.find({
         $or: [{username}, {email}]

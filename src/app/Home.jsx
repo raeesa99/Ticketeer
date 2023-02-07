@@ -12,7 +12,6 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <h1 id="h1">Ticket master</h1>
-       
       </div>
     </main>
   )

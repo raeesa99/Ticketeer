@@ -39,7 +39,7 @@ export default function SignUp() {
         register(username, email, password);
       }}>
 
-<h2 id='h1'>Sign Up:</h2>
+<h2 id='h1'>Customer Sign Up:</h2>
 <div id="box1">
 <label htmlFor="username"></label>
 <input type="text" id="username" name="username" placeholder="choose a username..." onChange={(e) => setUsername(e.target.value)} />
@@ -52,7 +52,7 @@ export default function SignUp() {
 
 <input id="submit1" type="submit" value="send" />
 
-<a id="reg" href="http://localhost:3000">login</a>
+{/* <a id="reg" href="http://localhost:3000">login</a> */}
 </div>
 </form>
 </div>

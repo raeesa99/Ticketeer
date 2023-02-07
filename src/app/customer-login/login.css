@@ -48,11 +48,30 @@
     
     }
 
+    #email{
+        width:auto;
+      height:auto;
+      border:none;
+      border-radius:8px;
+      padding:10px 25px;
+      margin-bottom:30px;
+      margin-top: 20px;
+      font-family:'Raleway',sans-serif;
+      font-size:10px;
+        
+    
+    }
+
+
+
+
+
+
     #box1{
         margin-top: 20px;
         text-align: center;
         width: 240px;
-        height: 500px;
+        height: 550px;
         overflow: hidden;
         margin-left: auto;
         margin-right: auto; 

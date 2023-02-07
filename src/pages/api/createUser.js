@@ -1,13 +1,13 @@
-import connectToDB from '@/lib/dbConnection';
+// import connectToDB from '@/lib/dbConnection';
 import mongoose from 'mongoose';
-import { default as User } from '@/models/customer'
+import { default as User } from '../../models/customer-signup'
 
 // const createEvent = (params) => {
 //     //create event in DB
 // }
 
 export default async function handler(req, res) {
-   await connectToDB();
+//    await connectToDB();
     
 if (req.method !== 'POST') {
     res.status(405).json({message: 'invalid method used', error: true})
