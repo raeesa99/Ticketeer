@@ -1,19 +1,15 @@
 import React from "react";
 import  Link from 'next/link';
-
-
 export default function Nav() {
   let navLinks;
   let customerLoggedIn = false;
   let sellerLoggedIn = false;
-
   if (customerLoggedIn) {
     navLinks =
     <>
         <Link href="/myaccount" className="nav-link">
           <li>My Account</li>
         </Link>
-
         <Link href="/logout" className="nav-link">
           <li>Log out</li>
         </Link>
@@ -24,7 +20,6 @@ export default function Nav() {
       <Link href="/sellTickets" className="nav-link">
             <li>List an event</li>
           </Link>
-
       <Link href="/logout" className="nav-link">
               <li>Log out</li>
             </Link>
@@ -35,15 +30,12 @@ export default function Nav() {
     <Link href="/customer-login" className="nav-link">
     <li> Customer Login</li>
   </Link>
-
   <Link href="/seller-login" className="nav-link">
     <li>Event Organiser Login</li>
   </Link>
-
   <Link href="/register" className="nav-link">
     <li>Customer Sign Up</li>
   </Link>
-
   <Link href="/register" className="nav-link">
     <li>Event Organiser Sign Up</li>
   </Link>
@@ -68,12 +60,11 @@ export default function Nav() {
         </li>
         <li>
           <a href="/" class="nav-link">
-            Home 
+            Home
           </a>
         </li>
       </ul>
     </div> */}
-      
     </>
   );
 };

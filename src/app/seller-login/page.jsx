@@ -37,7 +37,7 @@ export default function SignIn() {
         login(username, password);
       }}>
 
-<h2 id='h1'>Event Organiser Login:</h2>
+<h2 id='h1'>Event Organiser Signup:</h2>
 <div id="box1">
 <label htmlFor="username"></label>
 <input type="text" id="username" name="username" placeholder="enter username..." onChange={(e) => setUsername(e.target.value)} />
