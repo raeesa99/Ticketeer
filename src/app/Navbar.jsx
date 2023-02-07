@@ -1,7 +1,6 @@
 import React from "react";
 import  Link from 'next/link';
 
-
 export default function Nav() {
   let navLinks;
   let customerLoggedIn = false;
@@ -10,29 +9,33 @@ export default function Nav() {
   if (customerLoggedIn) {
     navLinks =
     <>
-        <Link href="/myaccount" className="nav-link">
-          <li>My Account</li>
-        </Link>
+  <Link href="/myaccount" className="nav-link">
+    <li>My Account</li>
+  </Link>
 
-        <Link href="/logout" className="nav-link">
-          <li>Log out</li>
-        </Link>
+  <Link href="/logout" className="nav-link">
+    <li>Log out</li>
+  </Link>
     </>
   } else if (sellerLoggedIn) {
     navLinks =
     <>
-      <Link href="/sellTickets" className="nav-link">
-            <li>List an event</li>
-          </Link>
+  <Link href="/sellTickets" className="nav-link">
+        <li>List an event</li>
+      </Link>
 
-      <Link href="/logout" className="nav-link">
-              <li>Log out</li>
-            </Link>
+  <Link href="/logout" className="nav-link">
+          <li>Log out</li>
+  </Link>
     </>
   }
-  else {
+  return (
     <>
-    <Link href="/customer-login" className="nav-link">
+  <a href="/" className="nav-link">
+    <li>Home</li>
+  </a>
+
+  <Link href="/Login" className="nav-link">
     <li> Customer Login</li>
   </Link>
 
@@ -48,32 +51,5 @@ export default function Nav() {
     <li>Event Organiser Sign Up</li>
   </Link>
   </>
-  }
-  return (
-    <>
-          <a href="/" className="nav-link">
-            <li>Home</li>
-              {/* <div class="nav">
-      <ul>
-        <li>
-          <a href="/Login" class="nav-link">
-            Login */}
-          </a>
-      {navLinks}
-        {/* </li>
-        <li>
-          <a href="/register" class="nav-link">
-            register
-          </a>
-        </li>
-        <li>
-          <a href="/" class="nav-link">
-            Home 
-          </a>
-        </li>
-      </ul>
-    </div> */}
-      
-    </>
-  );
+ )
 };
