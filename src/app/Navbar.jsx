@@ -3,7 +3,7 @@ import  Link from 'next/link';
 
 export default function Nav() {
   let navLinks;
-  let customerLoggedIn = false;
+  let customerLoggedIn = true;
   let sellerLoggedIn = false;
 
   if (customerLoggedIn) {
@@ -20,7 +20,7 @@ export default function Nav() {
   } else if (sellerLoggedIn) {
     navLinks =
     <>
-  <Link href="/sellTickets" className="nav-link">
+  <Link href="/sell-tickets" className="nav-link">
     <li>List an event</li>
   </Link>
 
@@ -34,6 +34,10 @@ export default function Nav() {
   <a href="/" className="nav-link">
     <li>Home</li>
   </a>
+
+  <Link href="/sell-tickets" className="nav-link">
+    <li>List an event</li>
+  </Link>
 
   <Link href="/customer-login" className="nav-link">
     <li> Customer Login</li>
