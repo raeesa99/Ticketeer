@@ -21,11 +21,11 @@ export default function Nav() {
     navLinks =
     <>
   <Link href="/sellTickets" className="nav-link">
-        <li>List an event</li>
-      </Link>
+    <li>List an event</li>
+  </Link>
 
   <Link href="/logout" className="nav-link">
-          <li>Log out</li>
+    <li>Log out</li>
   </Link>
     </>
   }
@@ -50,6 +50,7 @@ export default function Nav() {
   <Link href="/register" className="nav-link">
     <li>Event Organiser Sign Up</li>
   </Link>
+  {navLinks}
   </>
- )
+  )
 };
