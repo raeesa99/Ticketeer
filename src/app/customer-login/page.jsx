@@ -40,13 +40,13 @@ export default function Login() {
       }}>
           <h2 id="login1">Customer Login:</h2>
           <div id='box1'>
-            <label for="email"></label>
+            <label htmlFor="email"></label>
             <input type="text" id='email' name="email" placeholder="enter your email address" onChange={(e) => setUserEmail(e.target.value)}/>
 
             <br/>
             <input type="text" id="username" name="person" placeholder="username" onChange={(e) => setUserUsername(e.target.value)}/>
 
-            <label for="type"></label>
+            <label htmlFor="type"></label>
             <br/>
             <input type="text" id="password" name="type" placeholder="password" onChange={(e) => setUserPassword(e.target.value)}/>
             <br/>

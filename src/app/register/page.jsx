@@ -52,7 +52,7 @@ export default function SignUp() {
 
 <input id="submit1" type="submit" value="send" />
 
-<a id="reg" href="http://localhost:3000">login</a>
+{/* <a id="reg" href="http://localhost:3000">login</a> */}
 </div>
 </form>
 </div>

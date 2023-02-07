@@ -35,7 +35,7 @@ export default function Nav() {
     <li>Home</li>
   </a>
 
-  <Link href="/Login" className="nav-link">
+  <Link href="/customer-login" className="nav-link">
     <li> Customer Login</li>
   </Link>
 
