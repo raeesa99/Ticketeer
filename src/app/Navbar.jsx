@@ -4,7 +4,7 @@ import  Link from 'next/link';
 
 export default function Nav() {
   let navLinks;
-  let customerLoggedIn = true;
+  let customerLoggedIn = false;
   let sellerLoggedIn = false;
 
   if (customerLoggedIn) {
