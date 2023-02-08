@@ -6,8 +6,8 @@ import { useState, useEffect } from 'react'
 
 // const inter = Inter({ subsets: ['latin'] })
 
-const sell = async (price,username,event,location,capacity,max_capacity) => {
-  let data = await fetch('http://localhost:3000/api/eventUser', {
+const sell = async (price,username,event,location,maxcapacity) => {
+  let data = await fetch('http://localhost:3000/api/sellertickets', {
     method: 'post',
     headers: {
       'ContentType': 'application/json'
@@ -17,9 +17,8 @@ const sell = async (price,username,event,location,capacity,max_capacity) => {
       username,
       event,
       location,
-      capacity,
-      max_capacity,
-      eventID
+      maxcapacity,
+      // eventID
     })
   });
   //if data.error 
@@ -34,8 +33,8 @@ export default function selling() {
   const [username, setUsername] = useState('');
   const [event, setEvent] = useState('');
   const [location, setLocation] = useState('');
-  const [max_capacity, setmax_capacity] = useState('');
-  const [eventID, seteventID] = useState('');
+  const [maxcapacity, setMaxcapacity] = useState('');
+  // const [eventID, seteventID] = useState('');
 
   return (
     <main className={styles.main}>
@@ -43,7 +42,7 @@ export default function selling() {
       <div>
 <form id="cont1" method="post" onSubmit={(e) => {
         e.preventDefault();
-        register(username,event,location, max_capacity,eventID);
+        sell(price,username,event,location, maxcapacity);
       }}>
 
 <h2 id='h1'>SELL:</h2>
@@ -63,8 +62,8 @@ export default function selling() {
 <label htmlFor="location"></label>
 <input type="text" id="location" name="location" placeholder="set location" onChange={(e) => setLocation(e.target.value)}/>
 
-<label htmlFor="max_capacity"></label>
-<input type="text" id="max_capacity" name="max_capacity" placeholder="set capacity" onChange={(e) => setmax_capacity(e.target.value)}/>
+<label htmlFor="maxcapacity"></label>
+<input type="text" id="maxcapacity" name="maxcapacity" placeholder="set capacity" onChange={(e) => setMaxcapacity(e.target.value)}/>
 
 {/* <label htmlFor="eventID"></label>
 <input type="text" id="eventID" name="eventID" placeholder="" onChange={(e) => setLocation(e.target.value)}/> */}
