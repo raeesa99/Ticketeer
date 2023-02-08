@@ -17,6 +17,8 @@ import { useState, useEffect } from 'react'
 
 //   data = await data.json();
 //   console.log(data);
+//   localStorage.setItem('username', username.value)
+//   localStorage.setItem('password', password.value)
 // };
 
 export default function customerLogin() {
@@ -25,7 +27,12 @@ export default function customerLogin() {
       
       <div className={styles.description}>
       
-        <form action='/api/customer-login' id='cont1' method='post'>
+        <form action='/api/customer-login' id='cont1' method='post' 
+      //   onSubmit={(e) => {
+      //   e.preventDefault();
+      //   login();
+      // }}
+      >
 
           <h2 id="login1">Customer Login:</h2>
           <div id='box1'>

@@ -39,6 +39,10 @@ export default function Nav() {
     <li>List an event</li>
   </Link> */}
 
+<Link href="/events" className="nav-link">
+    <li>Events</li>
+  </Link>
+
   <Link href="/customer-login" className="nav-link">
     <li> Customer Login</li>
   </Link>
