@@ -21,5 +21,5 @@ try {
     eventuser.save();
 
 } catch(e){throw e}
-res.status(200).json({data: 'user saved to db', error: false})
+res.status(200).json({data: 'event-user saved to db', error: false})
 }
