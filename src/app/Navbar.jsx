@@ -38,45 +38,47 @@ export default function Nav() {
   // }
   return (
     <nav className="navbar">
-    <>
-  <a href="/" className="nav-link">
-    <li>Home</li>
-  </a>
+      <ul>
+          <>
+        <a href="/" className="nav-link">
+          <li>Home</li>
+        </a>
 
-  {/* <Link href="/sell-tickets" className="nav-link">
-    <li>List an event</li>
-  </Link> */}
+        {/* <Link href="/sell-tickets" className="nav-link">
+          <li>List an event</li>
+        </Link> */}
 
-  <Link href="/my-account" className="nav-link">
-    <li>My Account</li>
-  </Link>
+        <Link href="/my-account" className="nav-link">
+          <li>My Account</li>
+        </Link>
 
-  <Link href="/customer-login" className="nav-link">
-    <li> Customer Login</li>
-  </Link>
+        <Link href="/customer-login" className="nav-link">
+          <li> Customer Login</li>
+        </Link>
 
-  <Link href="/seller-login" className="nav-link">
-    <li>Event Organiser Login</li>
-  </Link>
+        <Link href="/seller-login" className="nav-link">
+          <li>Organiser Login</li>
+        </Link>
 
-  <Link href="/customer-register" className="nav-link">
-    <li>Customer Sign Up</li>
-  </Link>
+        <Link href="/customer-register" className="nav-link">
+          <li>Customer Register</li>
+        </Link>
 
-  <Link href="/seller-register" className="nav-link">
-    <li>Event Organiser Sign Up</li>
-  </Link>
+        <Link href="/seller-register" className="nav-link">
+          <li>Organiser Register</li>
+        </Link>
 
-  <Link href="/sell-tickets" className="nav-link">
-    <li>List an event</li>
-  </Link>
+        <Link href="/sell-tickets" className="nav-link">
+          <li>List Event</li>
+        </Link>
 
-  <Link href="/" className="nav-link">
-    <li>Log out</li>
-  </Link>
+        <Link href="/" className="nav-link">
+          <li>Logout</li>
+        </Link>
 
-  {/* {navLinks} */}
-  </>
+        {/* {navLinks} */}
+        </>
+  </ul>
   </nav>
   )
 };

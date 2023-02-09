@@ -27,8 +27,8 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <h1 id="h1">Ticket master</h1>
-       
+        <h1 id="h1">Welcome to Ticketeer</h1>
+        <h2>Upcoming Events:</h2>
       {
         tickets.map(ticket =>
             // <Link key={ticket.ticketID} href={{

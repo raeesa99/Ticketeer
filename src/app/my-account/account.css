@@ -1,3 +1,7 @@
+body {
+    color:black;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -7,12 +11,11 @@
 
 h1 {
     font-size: 50px;
-    color: grey;
 }
 
 .upcoming {
     flex-basis: calc(50% - 3rem);
-    background-color: rgb(19, 19, 20);
+    background-color: #7ec5ff;
     border-right: 2px solid grey;
 }
 
@@ -35,6 +38,7 @@ img {
     width: 600px;
     height: 400px;
 }
+
 h2, h3 {
     margin-top: 5px;
     margin-bottom: 5px;
