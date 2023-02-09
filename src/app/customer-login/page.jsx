@@ -3,23 +3,25 @@ import styles from './login.css'
 import  Link from 'next/link';
 import { useState, useEffect } from 'react'
 
-// const login = async (username, password) => {
-//   let data = await fetch('http://localhost:3000/api/customer-login', {
-//     method: 'post',
-//     headers: {
-//       'ContentType': 'application/json'
-//     },
-//     body: JSON.stringify({
-//       username,
-//       password
-//     })
-//   });
+const login = async (username, password) => {
+  let data = await fetch('http://localhost:3000/api/customer-login', {
+    method: 'post',
+    headers: {
+      'ContentType': 'application/json'
+    },
+    body: JSON.stringify({
+      username,
+      password
+    })
+  });
 
-//   data = await data.json();
-//   console.log(data);
-//   localStorage.setItem('username', username.value)
-//   localStorage.setItem('password', password.value)
-// };
+  data = await data.json();
+  console.log(data);
+if (data.success) {
+ localStorage.setItem('loggedIn', true)
+ localStorage.setItem('type', 'customer')
+}
+};
 
 export default function customerLogin() {
   return (

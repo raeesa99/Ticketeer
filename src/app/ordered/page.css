@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 50px;
+    color: grey;
+}
+
+.upcoming {
+    flex-basis: calc(50% - 3rem);
+    background-color: rgb(19, 19, 20);
+    border-right: 2px solid grey;
+}
+
+.upcomingCard, .pastCard {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+/* .upcomingCard, .pastCard {
+    width: 50%;
+    float: left;
+} */
+
+/* #pastCard {
+    width: 50%;
+    float: right;
+} */
+
+img {
+    width: 600px;
+    height: 400px;
+}
+h2, h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
