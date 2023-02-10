@@ -27,8 +27,8 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <h1 id="h1">Welcome to Ticketeer</h1>
-        <h2>Upcoming Events:</h2>
+        <h1 className='h1'>Welcome to Ticketeer</h1>
+        <h2 className='title'>Upcoming Events:</h2>
       {
         tickets.map(ticket =>
             // <Link key={ticket.ticketID} href={{
@@ -36,12 +36,16 @@ export default function Home() {
             //   query: ticket
             // }}>
             <div className="event">
+              <Image src={audience} className="image" width={400}></Image>
+              <div className='card'>
                 <h2 className='event'>{ticket.event}</h2>
-                <h2 className='price'>{ticket.price}</h2>
-                <h2 className='name'>{ticket.username}</h2>
-                <h2 className='location'>{ticket.location}</h2>
-                <h2 className='capacity'>{ticket.maxcapacity}</h2>
-                <Image src={audience} className="image" width={200}></Image>
+                <p className='price'>£{ticket.price}</p>
+                <p className='name'>{ticket.username}</p>
+                <p className='location'>Where: {ticket.location}</p>
+                <p className='capacity'>Tickets Available: {ticket.maxcapacity}</p>
+                </div>
+                
+                <br></br>
                 <Link href="/ordered"><button value="buy">Buy Tickets</button></Link>
             </div>
             // </Link>
