@@ -4,7 +4,7 @@ import  Link from 'next/link';
 import { useState, useEffect } from 'react'
 
 // const login = async (username, password) => {
-//   let data = await fetch('http://localhost:3000/api/customer-login', {
+//   let data = await fetch('http://localhost:3000/api/seller-login', {
 //     method: 'post',
 //     headers: {
 //       'ContentType': 'application/json'
@@ -16,7 +16,7 @@ import { useState, useEffect } from 'react'
 //   });
 
 //   data = await data.json();
-//   console.log(data);
+//     // console.log(data);
 // };
 
 export default function sellerLogin() {

@@ -20,8 +20,10 @@ export default async function findUser (req, res) {
     }
     
     if (password == user.password && username == user.username) {
-        //customerLoggedIn = true
-        //save username to local storage
+        if (typeof window !== 'undefined') {
+            localStorage.setItem('loggedIn', true)
+            localStorage.setItem('type', 'seller')
+        }
         res.redirect('/sell-tickets')
         }  
 }
